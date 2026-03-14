@@ -59,4 +59,4 @@ jobs:
       - name: Set image_url output
         id: set-image-url
         run: |
-          echo "image_url=${{ secrets.docker_username }}/${{ inputs.image_name }}:${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+          echo "image_url=${{ inputs.image_name }}:${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
