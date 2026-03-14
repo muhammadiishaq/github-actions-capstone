@@ -39,7 +39,7 @@ jobs:
       image_name: node-app
       tag: sha-${{ needs.generate-sha.outputs.short_sha }}
     secrets:
-      docker_username: ${{ secrets.DOCKER_USERNAME }}
+      docker_username: ${{ vars.DOCKER_USERNAME }}
       docker_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   deploy:

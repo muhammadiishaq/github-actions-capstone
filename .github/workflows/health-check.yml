@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/node-app
+  IMAGE_NAME: ${{ vars.DOCKER_USERNAME }}/node-app
   CONTAINER_NAME: node-app
 
 jobs:

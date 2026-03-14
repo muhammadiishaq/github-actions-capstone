@@ -53,8 +53,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.docker_username }}/${{ inputs.image_name }}:${{ inputs.tag }}
-            ${{ secrets.docker_username }}/${{ inputs.image_name }}:latest
+            ${{ vars.DOCKER_USERNAME }}/${{ inputs.image_name }}:${{ inputs.tag }}
+            ${{ vars.DOCKER_USERNAME }}/${{ inputs.image_name }}:latest
 
       - name: Set image_url output
         id: set-image-url
