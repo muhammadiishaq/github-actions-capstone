@@ -39,7 +39,6 @@ jobs:
       docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
       docker_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
-
   deploy:
     name: Deploy to Production
     runs-on: ubuntu-latest
