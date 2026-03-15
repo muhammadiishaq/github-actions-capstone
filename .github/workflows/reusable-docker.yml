@@ -63,7 +63,7 @@ jobs:
           echo "image_url=${{ inputs.image_name }}:${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
 
       - name: Run Trivy vulnerability scan
-        uses: aquasecurity/trivy-action@0.24.0
+        uses: aquasecurity/trivy-action@0.35.0
         with:
           image-ref: ${{ vars.DOCKER_USERNAME }}/${{ inputs.image_name }}:${{ inputs.tag }}
           format: table
