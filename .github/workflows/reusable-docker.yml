@@ -70,6 +70,7 @@ jobs:
           output: trivy-report.txt
           severity: CRITICAL
           exit-code: 1
+          ignorefile: .trivyignore
 
       - name: Upload Trivy scan report
         if: always()
