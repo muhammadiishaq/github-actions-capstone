@@ -1,4 +1,3 @@
-# GitHub Actions DevSecOps CI/CD Pipeline
 
 <p align="center">
   <a href="https://github.com/srdangat/github-actions-capstone/actions/workflows/main-pipeline.yml">
